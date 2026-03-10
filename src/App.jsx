@@ -2,6 +2,7 @@ import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { ProductLanding } from "./components/ProductLanding";
 import { Login } from "./pages/Login";
+import { LearningGrid } from "./components/LearningGrid";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -13,7 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<ProductLanding />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/card" element={<ProductCard />} />
+        <Route path="/grid" element={<LearningGrid />} />
       </Routes>
     </div>
   );
